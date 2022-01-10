@@ -40,6 +40,21 @@ MYSQL_PASSWORD = "db_user_password"
 MYSQL_DB = "schema_name"
 ```
 
+### Important commands
+
+Activating the virtual environment - `.venv\scripts\activate`
+Deactivate - `deactivate`
+View installed modules - `pip list`
+
+
+#### Creating DB tables
+
+1. Go to python shell in terminal `python`
+
+2. Import DB `from webapp import db`
+
+3. Make sure schema of db is already created, then create db tables with this `db_create_all()`
+
 ### Module documentation
 
 [ORM - SQL Alchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/changelog)\
