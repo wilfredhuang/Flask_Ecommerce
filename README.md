@@ -5,6 +5,12 @@ Flask-based web application for practice!
 
 
 
+# Installation
+```
+pip install -U Flask-SQLAlchemy
+pip install flask-marshmallow
+pip install -U marshmallow-sqlalchemy
+```
 
 # Resources
 
