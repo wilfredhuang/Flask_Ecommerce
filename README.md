@@ -2,24 +2,13 @@
 Flask-based web application for practice!
 
 
-
-
-
-# Installation
-```
-pip install -U Flask-SQLAlchemy
-pip install flask-marshmallow
-pip install -U marshmallow-sqlalchemy
-```
-
-# Resources
-
-### Setting up the project
+# Setting up the project
 [Project set up in VS Code: See the docs here](https://code.visualstudio.com/docs/python/tutorial-flask)
 
 1. Install virtual environment in root folder of project
 2. Add your own .env file in root folder (sample .env file shown below)
-3. Run the file in root directory with command `python run.py`
+3. Install required modules (see 'Modules Installation' section)
+4. Run the file in root directory with command `python run.py`
 ```
 # Configure debug mode here (True / False), (auto enabled if FLASK_ENV is set to development)
 # FLASK_DEBUG=1
@@ -46,14 +35,21 @@ MYSQL_PASSWORD = "db_user_password"
 MYSQL_DB = "schema_name"
 ```
 
-### Important commands
+# Modules Installation
+```
+pip install -U Flask-SQLAlchemy
+pip install flask-marshmallow
+pip install -U marshmallow-sqlalchemy
+```
 
-Activating the virtual environment - `.venv\scripts\activate`
-Deactivate - `deactivate`
+# Important commands
+
+Activating the virtual environment - `.venv\scripts\activate`\
+Deactivate - `deactivate`\
 View installed modules - `pip list`
 
 
-#### Creating DB tables
+### Creating DB tables
 
 1. Go to python shell in terminal `python`
 
@@ -61,7 +57,7 @@ View installed modules - `pip list`
 
 3. Make sure schema of db is already created, then create db tables with this `db_create_all()`
 
-### Module documentation
+# Module documentation
 
 [ORM - SQL Alchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/changelog)\
 [Marshmallow-SQLALCHEMY](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/changelog.html#changelog)\
